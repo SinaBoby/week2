@@ -1,0 +1,618 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: UberMove, system-ui, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  width: 98%;
+  margin: auto;
+  height: fit-content;
+}
+
+.main-nav {
+  display: flex;
+  background-color: black;
+  align-content: center;
+  justify-content: space-between;
+}
+.nav-left {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-start;
+  justify-self: left;
+  margin: 0 25px;
+}
+.nav-right {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-end;
+  margin: 0 25px 0 auto;
+}
+.menubar {
+  display: none;
+  align-items: center;
+  color: blanchedalmond;
+}
+.logo {
+  font-weight: bold;
+  font-size: 7vw;
+}
+.logo a {
+  margin: 1.5vw;
+}
+.nav-btn,
+.logo {
+  border: none;
+  color: blanchedalmond;
+  background-color: inherit;
+  font-family: UberMove;
+  place-self: center;
+}
+
+.nav-btn {
+  font-size: 1.25em;
+  display: inline-block;
+  padding: 0 1vw;
+  height: 100%;
+}
+
+.nav-btn:hover {
+  background-color: rgb(160, 153, 153);
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+a:hover {
+  background-color: rgb(160, 153, 153);
+  color: black;
+}
+
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: blanchedalmond;
+  z-index: 3;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  width: 100%;
+}
+.dropdown-container:hover .drop-content {
+  display: block;
+}
+
+.drop-content a {
+  background-color: black;
+  display: block;
+  padding: 1vw;
+  border-radius: 10%;
+}
+
+.drop-content a:hover {
+  background-color: rgb(160, 153, 153);
+  display: block;
+}
+
+.dropdown-container:hover,
+.drop-content:hover {
+  display: block;
+}
+
+.dropdown-container {
+  background-color: black;
+}
+
+.dropdown-container:hover {
+  background-color: black;
+  color: blanchedalmond;
+}
+
+.dropbtn {
+  padding: 2vw;
+  font-size: 1.25em;
+  color: blanchedalmond;
+  background-color: inherit;
+  border: none;
+  height: 100%;
+}
+
+.dropbtn:hover {
+  background-color: rgb(160, 153, 153);
+  color: black;
+}
+
+.first-hover {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 7fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgb(230, 222, 222);
+  width: 100%;
+}
+
+.old {
+  z-index: 1;
+  position: relative;
+  grid-column: 1/5;
+  grid-row: 1/4;
+  height: 100%;
+  max-width: 100%;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  align-items: center;
+  padding: 8px;
+}
+
+.eat > a,
+.delivery > a,
+.ride > a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.eat,
+.delivery,
+.ride {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 33.3%;
+  text-align: center;
+  height: fit-content;
+}
+
+.fas,
+.fa-taxi,
+.fa-utensils,
+.fa-car-side {
+  padding-top: 1vw;
+  font-size: 2vw;
+}
+
+.h {
+  display: flex;
+  font-size: 1.5vw;
+  align-items: center;
+  max-height: fit-content;
+  max-width: fit-content;
+  padding: 1vw 0;
+  font-weight: bold;
+  justify-self: center;
+}
+.header1 > h2,
+.header1 > p,
+.header1 > button,
+.header1 > a {
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+.header1 > h2 {
+  font-size: 1.5vw;
+}
+.header1 a {
+  text-decoration: underline;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  line-height: 2vw;
+  width: 100%;
+  height: 100%;
+}
+.header1 button {
+  border: none;
+  background-color: black;
+  border-radius: 10%;
+  color: ivory;
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 1.25vw;
+}
+
+.header1 > a,
+.header1 > p {
+  color: black;
+  font-size: 1.25vw;
+}
+
+.mid-sec1 {
+  background-image: url(images/newyork.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2vw;
+}
+.mid-sec1 a {
+  font-size: 1.5vw;
+  padding: 5px;
+}
+.mid-sec1 button {
+  border: none;
+  background-color: black;
+  border-radius: 10%;
+  color: ivory;
+  height: fit-content;
+  width: fit-content;
+  align-self: left;
+  padding: 1vw;
+  font-weight: bold;
+  margin: 2vw;
+}
+.mid-sec1 p {
+  font-size: 1.5vw;
+}
+.mid-sec1 h2,
+.mid-sec h2 {
+  font-size: 4vw;
+}
+.mid-sec {
+  padding: 2vw;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4vw;
+  margin-bottom: 2vw;
+}
+.articles {
+  display: flex;
+  justify-content: space-evenly;
+  height: fit-content;
+}
+.safety,
+.city {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  padding: 1vw;
+  margin-bottom: 1vw;
+  height: 60vw;
+}
+.city,
+.safety,
+.mid-sec,
+.articles {
+  display: flex;
+}
+.safety img,
+.city img {
+  object-fit: cover;
+  width: 40vw;
+  height: 25vw;
+  margin: 1rem;
+}
+.safety p,
+.city p {
+  display: flex;
+  padding: 1vw;
+  font-size: 1.25vw;
+  text-align: center;
+  line-height: 3rem;
+}
+.safety a,
+.city a {
+  text-decoration: underline;
+  color: black;
+  font-size: 1.25vw;
+  padding: 1.5vw;
+  background-color: rgb(223, 209, 209);
+  border-radius: 20%;
+}
+.safety h3,
+.city h3 {
+  font-size: 2.25vw;
+}
+.articles h2 {
+  padding: 2vw;
+}
+.down-sec {
+  margin: 3vw 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.down-sec a {
+  text-decoration: underline;
+  color: black;
+  font-size: 1.5vw;
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+
+.about,
+.news,
+.globe {
+  height: 35vw;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fa-solid,
+.fa-newspaper,
+.fa-house,
+.fa-address-card {
+  padding: 2vw;
+  font-size: 3.5vw;
+}
+.about p {
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5vw;
+  justify-self: stretch;
+}
+.down-sec h3 {
+  margin: 1vw;
+  padding: 1vw;
+  font-size: 3vw;
+}
+.globe a,
+.news a,
+.about a {
+  text-decoration: underline;
+  color: black;
+  font-size: 1.5vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+.apps {
+  background-color: #c4bdbd;
+  display: grid;
+  grid-template-columns: 0.5fr 4.5fr 1.5fr 4.5fr 0.75fr;
+  grid-template-rows: 0.5fr 3fr 4fr 4fr 0.5fr;
+  width: 100%;
+}
+.apps h2 {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  font-size: 5vw;
+  margin: 3vw;
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+.driver-app {
+  background-color: whitesmoke;
+  align-content: center;
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 2.5vw;
+  padding: 1.25vw;
+  margin: 1vw;
+}
+.uber-app {
+  background-color: whitesmoke;
+  display: flex;
+  grid-column: 4/5;
+  grid-row: 3/4;
+  font-size: 2.5vw;
+  padding: 1.25vw;
+  margin: 1vw;
+}
+.driver-app img,
+.uber-app img {
+  margin: 0.75vw;
+  width: 10vw;
+  height: 10vw;
+  align-self: center;
+}
+.driver-app h3,
+.uber-app h3 {
+  font-size: 2.5vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+
+.fa-solid,
+.fa-right-long {
+  align-self: center;
+}
+footer {
+  background-color: black;
+  color: blanchedalmond;
+}
+footer h4 {
+  font-size: 4vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+footer a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+footer a:hover {
+  background-color: black;
+  color: grey;
+}
+footer h3 {
+  font-size: 2.5vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+.company,
+.products,
+.travel,
+.global {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social {
+  margin: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+  width: 100%;
+}
+.fab,
+.fa-facebook-square,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin {
+  font-size: 4.5vw;
+  margin: 3vw;
+}
+footer p {
+  color: blanchedalmond;
+  margin: 2vw 1vw 3vw 1vw;
+  text-align: center;
+  font-size: 1.5vw;
+  padding-bottom: 4vw;
+}
+
+@media (max-width: 1137px) {
+  .logo {
+    padding: 0.5vw 2.5vww;
+  }
+  .first-hover {
+    display: flex;
+    flex-direction: column;
+  }
+  header1 {
+    height: max-content;
+  }
+  .header1 h2,
+  .header1 p,
+  .header1 a {
+    justify-content: start;
+    padding: 15px;
+    margin: 2vw 0;
+    font-size: 3vw;
+  }
+  .header1 > h2 {
+    font-size: 4.5vw;
+  }
+  .fas,
+  .fa-taxi,
+  .fa-utensils,
+  .fa-car-side {
+    padding-top: 1.5vw;
+    font-size: 4vw;
+  }
+  .header1 button {
+    padding: 2vw;
+    font-size: 3vw;
+    margin: 2vw;
+  }
+  .h {
+    font-size: 3vw;
+  }
+  .menubar {
+    display: flex;
+    align-items: center;
+    color: blanchedalmond;
+    place-self: center;
+    column-gap: 1vw;
+    padding: 0 3vw;
+  }
+  .mid-sec {
+    align-items: center;
+  }
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .city,
+  .safety {
+    width: 70%;
+  }
+  .about,
+  .news,
+  .globe {
+    width: 50%;
+  }
+
+  .apps {
+    row-gap: 3.5vw;
+  }
+  .driver-app {
+    grid-column: 2/5;
+  }
+  .uber-app {
+    grid-column: 2/5;
+    grid-row: 4/5;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .company,
+  .products,
+  .global,
+  .travel {
+    width: 47.5%;
+  }
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .about,
+  .news,
+  .globe {
+    height: 35vw;
+    width: 100%;
+  }
+  .company,
+  .products,
+  .global,
+  .travel {
+    width: 95%;
+  }
+  .sign,
+  .nav-btn {
+    display: none;
+  }
+  .main-nav {
+    justify-content: space-evenly;
+  }
+}
