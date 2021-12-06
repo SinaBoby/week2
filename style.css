@@ -7,27 +7,31 @@
 }
 
 body {
-  width: 98%;
+  overflow-x: hidden;
+  max-width:100% ;
   margin: auto;
-  height: fit-content;
+  /*height: fit-content;*/
 }
 
 .main-nav {
   display: flex;
   background-color: black;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 .nav-left {
   display: flex;
   width: fit-content;
+  width: -moz-fit-content;
   justify-content: flex-start;
-  justify-self: left;
+  align-items: center;
+
   margin: 0 25px;
 }
 .nav-right {
   display: flex;
   width: fit-content;
+  width: -moz-fit-content;
   justify-content: flex-end;
   margin: 0 25px 0 auto;
 }
@@ -36,12 +40,10 @@ body {
   align-items: center;
   color: blanchedalmond;
 }
-.logo {
-  font-weight: bold;
-  font-size: 7vw;
-}
+
 .logo a {
   margin: 1.5vw;
+  font-size: 2rem;
 }
 .nav-btn,
 .logo {
@@ -49,7 +51,6 @@ body {
   color: blanchedalmond;
   background-color: inherit;
   font-family: UberMove;
-  place-self: center;
 }
 
 .nav-btn {
@@ -62,6 +63,7 @@ body {
 .nav-btn:hover {
   background-color: rgb(160, 153, 153);
   color: black;
+  cursor: pointer;
 }
 
 a {
@@ -77,6 +79,7 @@ a:hover {
 .dropdown-container {
   display: inline-block;
   position: relative;
+  background-color: black;
 }
 
 .drop-content {
@@ -85,9 +88,7 @@ a:hover {
   background-color: black;
   color: blanchedalmond;
   z-index: 3;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  width: 100%;
+  width:100%;
 }
 .dropdown-container:hover .drop-content {
   display: block;
@@ -96,8 +97,8 @@ a:hover {
 .drop-content a {
   background-color: black;
   display: block;
-  padding: 1vw;
-  border-radius: 10%;
+  padding: 5px 10px;
+  
 }
 
 .drop-content a:hover {
@@ -110,9 +111,6 @@ a:hover {
   display: block;
 }
 
-.dropdown-container {
-  background-color: black;
-}
 
 .dropdown-container:hover {
   background-color: black;
@@ -153,7 +151,7 @@ a:hover {
   width: 100%;
 }
 
-.old {
+.main-photo {
   z-index: 1;
   position: relative;
   grid-column: 1/5;
@@ -197,9 +195,9 @@ a:hover {
   font-size: 2vw;
 }
 
-.h {
+.header-sub {
   display: flex;
-  font-size: 1.5vw;
+  font-size: 1rem;
   align-items: center;
   max-height: fit-content;
   max-width: fit-content;
@@ -218,7 +216,7 @@ a:hover {
   vertical-align: middle;
 }
 .header1 > h2 {
-  font-size: 1.5vw;
+  font-size: 1.15rem;
 }
 .header1 a {
   text-decoration: underline;
@@ -242,19 +240,23 @@ a:hover {
   align-self: center;
   padding: 7px;
   font-weight: bold;
-  font-size: 1.25vw;
+  font-size: 1rem;
 }
 
 .header1 > a,
 .header1 > p {
   color: black;
-  font-size: 1.25vw;
+  font-size: 1.1rem;
 }
 
 .mid-sec1 {
   background-image: url(images/newyork.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.mid-sec1 .container {
+  width:85%;
+  margin:auto;
   display: flex;
   flex-direction: column;
   row-gap: 2vw;
@@ -454,22 +456,23 @@ footer {
   color: blanchedalmond;
 }
 footer h4 {
-  font-size: 4vw;
+  font-size: 2rem;
   padding: 1vw;
   margin: 1vw;
 }
 footer a {
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   padding: 1vw;
   margin: 1vw;
 }
 footer a:hover {
-  background-color: black;
-  color: grey;
+  opacity: 0.7;
+  background: none;
+  color: bisque;
 }
 footer h3 {
-  font-size: 2.5vw;
+  font-size: 1.5rem;
   padding: 1vw;
   margin: 1vw;
 }
