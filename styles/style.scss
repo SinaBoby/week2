@@ -130,6 +130,9 @@ a:hover {
   background-color: rgb(160, 153, 153);
   color: black;
 }
+main {
+  margin: auto;
+}
 
 .first-hover {
   width: 100%;
@@ -149,7 +152,8 @@ a:hover {
   grid-column: 2/7;
   grid-row: 2/11;
   background-color: #ffffff;
-  width: 100%;
+  max-width: 576px;
+  height: 100%;
 }
 
 .main-photo {
@@ -164,13 +168,13 @@ a:hover {
 .icons {
   display: flex;
   width: 100%;
-  height: 30%;
+  height: 20%;
   align-items: center;
-  padding-top: 10px;
   justify-content: space-evenly;
 }
 .icons img {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .eat > a,
@@ -198,7 +202,6 @@ a:hover {
   align-items: center;
   max-height: fit-content;
   max-width: fit-content;
-  padding: 1vw 0;
   font-weight: bold;
   justify-self: center;
 }
@@ -217,6 +220,8 @@ a:hover {
   font-size: 52px;
   line-height: 66px;
   text-align: left;
+  width: fit-content;
+  font-weight: normal;
 }
   
 .header1 a {
@@ -226,11 +231,11 @@ a:hover {
 .header1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  line-height: 2vw;
+  justify-content: space-between;
+  
   width: 100%;
   height: 100%;
-  padding: 48px;
+  padding: 40px;
   text-align: left;
 }
 .header1 button {
@@ -522,7 +527,7 @@ footer p {
     flex-direction: column;
   }
   header1 {
-    height: max-content;
+    grid-row: 2/11;
   }
   .header1 h2,
   .header1 p,
