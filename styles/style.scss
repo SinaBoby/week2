@@ -130,13 +130,10 @@ a:hover {
   background-color: rgb(160, 153, 153);
   color: black;
 }
-main {
-  margin: auto;
-}
+
 
 .first-hover {
-  width: 100%;
-  height: 100%;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(12,1fr);
@@ -146,14 +143,15 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  justify-self: end;
+  align-self: stretch;
   z-index: 2;
   position: relative;
   grid-column: 2/7;
-  grid-row: 2/11;
+  grid-row: 3/10;
   background-color: #ffffff;
-  max-width: 576px;
-  height: 100%;
+  max-width: 600px;
+
 }
 
 .main-photo {
@@ -161,8 +159,8 @@ main {
   position: relative;
   grid-column: 1/13;
   grid-row: 1/13;
+  width: 100%;
   
-  max-width: 100%;
 }
 
 .icons {
@@ -220,7 +218,7 @@ main {
   font-size: 52px;
   line-height: 66px;
   text-align: left;
-  width: fit-content;
+  width: 450px;
   font-weight: normal;
 }
   
@@ -234,7 +232,7 @@ main {
   justify-content: space-between;
   
   width: 100%;
-  height: 100%;
+  height:100%;
   padding: 40px;
   text-align: left;
 }
@@ -257,7 +255,8 @@ main {
 }
 
 .mid-sec1 {
-  background-image: url(images/newyork.jpeg);
+  background: url("https://www.uber-assets.com/image/upload/v1614379346/assets/f4/63ca3e-b0d7-4463-988f-a2fead503ddc/original/DotCom_Update_U4B_bg_mobileD.png");
+  background-position:bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -526,8 +525,12 @@ footer p {
     display: flex;
     flex-direction: column;
   }
-  header1 {
-    grid-row: 2/11;
+  .header{
+    z-index: 0;
+    width: 100%;
+  }
+  .header1{
+    height: fit-content;
   }
   .header1 h2,
   .header1 p,
