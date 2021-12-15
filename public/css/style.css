@@ -475,7 +475,7 @@ a:hover {
 
 .safety h3,
 .city h3 {
-  font-size: 2.25vw;
+  font-size: 26px;
 }
 
 .articles h2 {
@@ -502,7 +502,7 @@ a:hover {
 .about,
 .news,
 .globe {
-  height: 35vw;
+  height: 25vw;
   width: 33.3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,10 +527,10 @@ a:hover {
   font-size: 3.5vw;
 }
 
-.about p {
+.down-sec p {
   text-align: center;
-  line-height: 3rem;
-  font-size: 1.5vw;
+  line-height: 2rem;
+  font-size: 16px;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
 }
@@ -538,7 +538,7 @@ a:hover {
 .down-sec h3 {
   margin: 1vw;
   padding: 1vw;
-  font-size: 3vw;
+  font-size: 18px;
 }
 
 .globe a,
@@ -569,9 +569,9 @@ a:hover {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  font-size: 5vw;
+  font-size: 36px;
   margin: 3vw;
-  text-align: center;
+  text-align: left;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
