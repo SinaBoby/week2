@@ -154,9 +154,6 @@ a:hover {
 }
 
 .first-hover {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -177,18 +174,15 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   justify-self: end;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
   z-index: 2;
   position: relative;
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/7;
   -ms-grid-row: 3;
-  -ms-grid-row-span: 7;
-  grid-row: 3/10;
+  -ms-grid-row-span: 9;
+  grid-row: 3/12;
   background-color: #ffffff;
-  max-width: 600px;
 }
 
 .main-photo {
@@ -201,6 +195,7 @@ a:hover {
   -ms-grid-row-span: 12;
   grid-row: 1/13;
   width: 100%;
+  height: 100%;
 }
 
 .icons {
@@ -222,9 +217,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.eat > a,
-.delivery > a,
-.ride > a {
+.icons a {
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,9 +247,6 @@ a:hover {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   text-align: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .header-sub {
@@ -313,6 +303,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 30px;
   width: 100%;
   height: 100%;
   padding: 40px;
@@ -397,7 +388,7 @@ a:hover {
 
 .mid-sec1 h2,
 .mid-sec h2 {
-  font-size: 16px;
+  font-size: 36px;
 }
 
 .mid-sec {
