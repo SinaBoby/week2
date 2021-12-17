@@ -454,13 +454,13 @@ footer {
   color: blanchedalmond;
 }
 footer h4 {
-  font-size: 2rem;
+  font-size: 24px;
   padding: 1vw;
   margin: 1vw;
 }
 footer a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 14px;
   padding: 1vw;
   margin: 1vw;
 }
@@ -470,7 +470,7 @@ footer a:hover {
   color: bisque;
 }
 footer h3 {
-  font-size: 1.5rem;
+  font-size: 18px;
   padding: 1vw;
   margin: 1vw;
 }
@@ -493,19 +493,15 @@ footer h3 {
   gap: 2vw;
   width: 100%;
 }
-.fab,
-.fa-facebook-square,
-.fa-instagram,
-.fa-twitter,
-.fa-linkedin {
-  font-size: 4.5vw;
+ion-icon {
+  font-size: 3vw;
   margin: 3vw;
 }
 footer p {
   color: blanchedalmond;
   margin: 2vw 1vw 3vw 1vw;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 14px;
   padding-bottom: 4vw;
 }
 
